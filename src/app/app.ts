@@ -7,10 +7,17 @@ import { Login } from './login/login';
   styleUrl: './app.css'
 })
 export class App {
-  x=10;
-  y=20;
-  
-  clickHandler(){
-    console.log('Button clicked!');
+  count:number = 0
+
+  handleIncreament(){
+    this.count+=1;
+  }
+
+  handleDecreament(){
+    this.count-=1;
+  }
+
+  handleReset(){
+    this.count = 0;
   }
 }
